@@ -1,0 +1,70 @@
+#gacha_img{
+    width: 200px;
+    height: 200px;
+}
+
+#hasil_gacha_img{
+    display: flex;
+    gap: 5px;
+}
+
+#hasil_gacha_img img{
+    width: 100px;
+}
+
+#hasil_gacha_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#hasil_gacha_img img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    #hasil_gacha_img img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hasil_gacha_img img {
+        width: calc(20% - 10px);
+    }
+}
+
+/* CSS untuk gambar */
+.hidden {
+  display: none;
+}
+
+/* Animasi untuk gambar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#gacha_result_img {
+  animation: fadeIn .3s ease-in-out;
+}
+
+.fadeOut {
+    animation: fadeOut .3s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
